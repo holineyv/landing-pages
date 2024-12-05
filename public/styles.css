@@ -1,0 +1,31 @@
+/* Custom styles for RaptorLink homepage */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary: #69BF40;
+  --primary-dark: #21480F;
+  --background: #1D1D1D;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+}
